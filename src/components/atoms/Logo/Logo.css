@@ -1,3 +1,4 @@
 a.header__logo > img {
   height: 60px;
+  border: var(--btn-add);
 }

@@ -11,7 +11,10 @@ const NavBar = ({className}) =>{
       <ul>
         <li>
           {/*//! Esto me suena a loop */}
-          <LinkButton text="Botón de navbar"/>
+          <LinkButton text="Iniciar sesión"/>
+        </li>
+        <li>
+          <LinkButton text="Sign up"/>
         </li>
       </ul>
     </div>
