@@ -33,15 +33,17 @@
   text-align: center;
   height: 100%;
   padding-top: 5px;
+  margin: 2px;
 }
 
 .header__menu li:hover {
-  border-top: 2px solid var(--btn-add-light);
-  padding-top: 3px;
+  border-top: 3px solid var(--lnk-btn-color);
+  padding-top: 2px;
 }
+
 .header__menu li:hover button {
   background-color: var(--lnk-btn-hover);
   color: var(--bg-second-color);
-  transition: all 0.5s;
+  transition: all 0.2s;
   /* box-shadow:  0px 2px 0px 0px var(--btn-add-light); */
 } 

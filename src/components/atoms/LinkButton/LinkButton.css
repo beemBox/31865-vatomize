@@ -1,14 +1,14 @@
 .link__btn {
   background-color: var(--lnk-btn-fill);
-  color: var(--btn-add);
+  color: var(--lnk-btn-color);
   font-size: 16px;
   border: none;
   box-shadow: none;
   height: 100%;
+  width: 100%;
   transition: all 0.5s;
 }
 
 .link__btn:hover {
-  color: var(--lnk-btn-color);
   cursor: pointer;
 }
