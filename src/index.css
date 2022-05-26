@@ -34,15 +34,23 @@ Blanco: #fff
 Negro: #222; - Tres Patitos
 */
 
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+}
+
 :root {
   --bg-main-color: #dcdddf;
   --bg-second-color: #013976;
+  /* Sections */
   --bg-section-main: #0098d2;
-  /* Gradientes mezclados con opacidad basada en Gris Siberia */
-  --bg-gradient-light: #bdd269dc;
-  --bg-gradient-dark: #2a491fdc; 
   --heading-txt-color: #fbc67d;
   --border-color: #005890;
+  
+  /* Gradientes mezclados con opacidad basada en Gris Siberia posiblemente para hero*/
+  --bg-gradient-light: #bdd269dc;
+  --bg-gradient-dark: #2a491fdc; 
+  
   /* Buttons */
   --btn-add-dark: #2a491f;
   --btn-add: #83a512;
@@ -62,6 +70,7 @@ Negro: #222; - Tres Patitos
   padding: 0;
   box-sizing: border-box;
   font-size: 16px;
+  font-family: 'Open Sans';
 }
 
 body {

@@ -1,0 +1,13 @@
+.section {
+  background-color: var(--bg-main-color);
+  padding: 20px;
+}
+
+.section__heading {
+  color: var(--heading-txt-color);
+  font-kerning: none;
+  font-weight: 300;
+  transform: scale(1, 0.8);
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--bg-main-color)
+}

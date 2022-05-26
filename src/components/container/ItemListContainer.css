@@ -1,0 +1,5 @@
+.section {
+  background-color: var(--bg-second-color);
+  width: 90vw;
+  margin: 20px auto;
+}
