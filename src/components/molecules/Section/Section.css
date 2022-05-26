@@ -1,13 +1,17 @@
 .section {
-  background-color: var(--bg-main-color);
+  background-color: var(--bg-section-main);
   padding: 20px;
+  border-bottom: 5px solid var(--border-color);
+  width: 90vw;
+  margin: 20px auto;
 }
 
 .section__heading {
   color: var(--heading-txt-color);
   font-kerning: none;
   font-weight: 300;
-  transform: scale(1, 0.8);
+  transform: scale(1, 0.7);
   text-transform: uppercase;
-  border-bottom: 2px solid var(--bg-main-color)
+  border-bottom: 2px solid var(--bg-main-color);
+  font-size: 22px;
 }

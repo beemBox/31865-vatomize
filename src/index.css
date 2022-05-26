@@ -43,9 +43,9 @@ Negro: #222; - Tres Patitos
   --bg-main-color: #dcdddf;
   --bg-second-color: #013976;
   /* Sections */
-  --bg-section-main: #0098d2;
+  --bg-section-main: #013976;
   --heading-txt-color: #fbc67d;
-  --border-color: #005890;
+  --border-color: #83a512;
   
   /* Gradientes mezclados con opacidad basada en Gris Siberia posiblemente para hero*/
   --bg-gradient-light: #bdd269dc;
