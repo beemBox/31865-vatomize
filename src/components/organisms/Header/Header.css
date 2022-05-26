@@ -1,0 +1,20 @@
+.header {
+  background-color: var(--bg-second-color);
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.header__logo img {
+  height: 60px;
+}
+/* Lista de links de navegación */
+.header__menu ul {
+  list-style: none;
+  margin: 0 10px 0 0px;
+  padding: 0;
+  width: 100px;
+}

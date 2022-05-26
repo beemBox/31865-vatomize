@@ -1,13 +1,65 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/** Colores de la webapp - Montana MTN94, sale un mural.
+*! En primer complementario tetrádico hice el logo (o un flop) sumado a escala de grises como contraste.
+*? Tonos principales o análogos
+Ultra Oscuro: #013976 - Azul Oscuro
+Oscuro: #005890 - Azul Eléctrico
+Tono principal: #0074b1 - Azul Europa
+Claro: #0098d2 - Azul Libertad
+Ultra Claro: #c3e7f7 - Azul Lluvia
+
+*TODO botones, links y otros principales
+*? Tonos complementarios directos y análogos
+Tono oscuro: #fbc67d - Naranja Plural
+Tono principal: #fedca3 - Naranja Dalai
+Tono Claro: #ffebc2 - Sundance
+
+*TODO botones, links y otras cositas secundarias (con powerlines, detalles y 3d)
+*? Tonos secundarios o análogos de principales
+Tono oscuro: #2a491f; - Verde Valle
+Tono principal: #83a512 - Verde Guacamole (palta papá)
+Tono Claro: #bdd269 - Verde Pistacho
+
+*? Tonos complementarios directos y análogos
+Tono Oscuro: #6b0038 - Rojo Rioja
+Tono principal: #d90075 - Magen ta
+Tono Claro: #ee7faa - Rosa Orquídea
+
+*? Grises
+Oscuro: #48474c - Gris Icario
+Intermedio: #8a8b8d - Gris Londres
+Claro: #dcdddf - Gris Siberia
+
+*? Neutros
+Blanco: #fff
+Negro: #222; - Tres Patitos
+*/
+
+:root {
+  --bg-main-color: #dcdddf;
+  --bg-second-color: #013976;
+  --bg-section-main: #0098d2;
+  /* Gradientes mezclados con opacidad basada en Gris Siberia */
+  --bg-gradient-light: #bdd269dc;
+  --bg-gradient-dark: #2a491fdc; 
+  --heading-txt-color: #fbc67d;
+  --border-color: #005890;
+  --btn-add-dark: #2a491f;
+  --btn-add: #83a512;
+  --btn-add-light: #bdd269;
+  --btn-rm-dark: #6b0038;
+  --btn-rm: #d90075;
+  --btn-rm-light: #ee7faa;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-main-color);
+  height: 100vh;
+  width: 100vw;
+  position: relative;
 }
