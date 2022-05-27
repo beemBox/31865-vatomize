@@ -7,8 +7,19 @@
   height: 100%;
   width: 100%;
   transition: all 0.5s;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transform: scale(1, 0.8);
+  margin-top: 2px;
 }
 
 .link__btn:hover {
   cursor: pointer;
+}
+
+.link__btn ~ hr{
+  height: 1px;
+  width: 0px;
+  margin: 0 auto;
+  background: transparent;
 }

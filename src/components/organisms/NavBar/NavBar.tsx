@@ -13,6 +13,9 @@ const NavBar = ({className}) =>{
           {/*//! Esto me suena a loop */}
           <LinkButton text="Sign In"/>
         </li>
+        <li style={{color: "var(--bg-main-color)"}}>
+          |
+        </li>
         <li>
           <LinkButton text="Sign up"/>
         </li>
