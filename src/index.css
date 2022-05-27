@@ -43,6 +43,7 @@ Negro: #222; - Tres Patitos
 :root {
   --bg-main-color: #dcdddf;
   --bg-second-color: #013976;
+  --border-bottom: #0098d2;
   /* Sections */
   --bg-section-main: #013976;
   --heading-txt-color: #f5a54a;
@@ -62,8 +63,8 @@ Negro: #222; - Tres Patitos
   --logo-border-powerline: var(--btn-add-light);
   /* Links */
   --lnk-btn-fill: none;
-  --lnk-btn-hover: var(--bg-main-color);
-  --lnk-btn-color: var(--heading-txt-color);
+  --lnk-btn-color: var(--bg-main-color);
+  --lnk-btn-hover: var(--heading-txt-color);
 }
 
 * {

@@ -28,22 +28,23 @@
 }
 
 .header__menu li {
-  min-width: 100px;
+  min-width: 60px;
   margin: 10px 0;
   text-align: center;
   height: 100%;
   padding-top: 5px;
   margin: 2px;
+  border-bottom: 0px solid var(--bg-second-color);
 }
 
 .header__menu li:hover {
-  border-top: 3px solid var(--lnk-btn-color);
+  border-bottom: 3px solid var(--lnk-btn-color);
   padding-top: 2px;
 }
 
 .header__menu li:hover button {
-  background-color: var(--lnk-btn-hover);
-  color: var(--bg-second-color);
+  /* background-color: var(--lnk-btn-hover); */
+  color: var(--heading-txt-color);
   transition: all 0.2s;
   /* box-shadow:  0px 2px 0px 0px var(--btn-add-light); */
 } 

@@ -36,7 +36,7 @@ div.logo {
 }
 
 .logo__text-up {
-  color: var(--lnk-btn-color);
+  color: var(--heading-txt-color);
   font-size: 202%;
   transform: scale(1, 0.6);
   font-weight: 100;
