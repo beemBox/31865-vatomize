@@ -9,6 +9,7 @@ Ultra Claro: #c3e7f7 - Azul Lluvia
 
 *TODO botones, links y otros principales
 *? Tonos complementarios directos y análogos
+Ultra oscuro: #f5a54a - Mandarina
 Tono oscuro: #fbc67d - Naranja Plural
 Tono principal: #fedca3 - Naranja Dalai
 Tono Claro: #ffebc2 - Sundance
@@ -44,7 +45,7 @@ Negro: #222; - Tres Patitos
   --bg-second-color: #013976;
   /* Sections */
   --bg-section-main: #013976;
-  --heading-txt-color: #fbc67d;
+  --heading-txt-color: #f5a54a;
   --border-color: #83a512;
   
   /* Gradientes mezclados con opacidad basada en Gris Siberia posiblemente para hero*/
