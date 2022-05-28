@@ -11,11 +11,15 @@ const NavBar = ({className}: {className: string}) =>{
       <ul>
         <li>
           {/*//! Esto me suena a loop */}
-          <LinkButton text="Sign In"/>
+          <LinkButton text="Offers"/>
         </li>
         <li>|</li>
         <li>
-          <LinkButton text="Sign up"/>
+          <LinkButton text="Explore vapes"/>
+        </li>
+        <li>|</li>
+        <li>
+          <LinkButton text="Trendy"/>
         </li>
         <li>|</li>
         <li><CartWidget className="cart-widget__icon" /></li>
