@@ -13,11 +13,11 @@ const NavBar = ({className}: {className: string}) =>{
           {/*//! Esto me suena a loop */}
           <LinkButton text="Sign In"/>
         </li>
-        <li style={{color: "var(--border-bottom)"}}>|</li>
+        <li>|</li>
         <li>
           <LinkButton text="Sign up"/>
         </li>
-        <li style={{color: "var(--border-color)"}}>|</li>
+        <li>|</li>
         <li><CartWidget className="cart-widget__icon" /></li>
       </ul>
     </div>
