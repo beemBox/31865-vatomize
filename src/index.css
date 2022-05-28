@@ -41,6 +41,7 @@ Negro: #222; - Tres Patitos
 }
 
 :root {
+  --bg-normal-white: #fff;
   --bg-main-color: #dcdddf;
   --bg-second-color: #013976;
   --border-bottom: #0098d2;
@@ -76,7 +77,7 @@ Negro: #222; - Tres Patitos
 }
 
 body {
-  background-color: var(--bg-main-color);
+  background-color: var(--bg-normal-white);
   height: 100vh;
   width: 100vw;
 }
