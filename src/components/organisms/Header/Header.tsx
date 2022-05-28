@@ -2,6 +2,7 @@ import React from 'react'
 import NavBar from '../NavBar/NavBar'
 import Logo from '../../atoms/Logo/Logo'
 import './Header.css'
+
 /**
  ** Header del layout
  *! Puede que no deje el NavBar dentro del header. Depende de cómo lo vaya implementando avance.
@@ -16,7 +17,9 @@ const Header = (props: {user: {}}): JSX.Element => {
   return (
     <div className="header">
       <Logo className='header__logo logo' />
-      <NavBar className='header__menu' />
+      <div className="header__menu-container">
+        <NavBar className='header__menu' />
+      </div>
     </div>
   )
 }

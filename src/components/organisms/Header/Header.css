@@ -14,6 +14,11 @@
   height: 50px;
   border: 1.4px solid var(--logo-border-powerline);
 }
+
+.header__menu-container {
+  display: flex;
+  align-items: center;
+}
 /* Lista de links de navegación */
 .header__menu {
   position: flex;
