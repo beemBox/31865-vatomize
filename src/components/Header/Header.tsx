@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from '../NavBar/NavBar'
-import Logo from '../../atoms/Logo/Logo'
+import Logo from '../Logo/Logo'
 import './Header.css'
 
 /**

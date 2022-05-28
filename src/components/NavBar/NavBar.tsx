@@ -1,6 +1,6 @@
 import React from 'react'
-import LinkButton from '../../atoms/LinkButton/LinkButton'
-import CartWidget from '../../atoms/CartWidget/CartWidget'
+import LinkButton from '../LinkButton/LinkButton'
+import CartWidget from '../CartWidget/CartWidget'
 /**
  ** Componente que contiene el NavBar del layout.
  * @param props Recibe las props que le envíe al renderizar el componente.

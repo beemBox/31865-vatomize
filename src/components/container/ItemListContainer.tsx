@@ -1,5 +1,5 @@
 import React from 'react'
-import Section from '../molecules/Section/Section'
+import Section from '../Section/Section'
 import './ItemListContainer.css'
 
 const ItemListContainer = ({msg}) => {
