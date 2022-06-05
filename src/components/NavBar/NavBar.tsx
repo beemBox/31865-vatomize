@@ -11,15 +11,24 @@ const NavBar = ({className}: {className: string}) =>{
       <ul>
         <li>
           {/*//! Esto me suena a loop */}
-          <LinkButton text="Offers"/>
+          {/*//todo TOMAR LOS TEXTOS DE BTNS DE web.config.js  */}
+          <LinkButton text="Juices"/>
         </li>
         <li>|</li>
         <li>
-          <LinkButton text="Explore vapes"/>
+          <LinkButton text="Vapes"/>
         </li>
         <li>|</li>
         <li>
-          <LinkButton text="Trendy"/>
+          <LinkButton text="Mods"/>
+        </li>
+        <li>|</li>
+        <li>
+          <LinkButton text="Tanks"/>
+        </li>
+        <li>|</li>
+        <li>
+          <LinkButton text="Accesories"/>
         </li>
         <li>|</li>
         <li><CartWidget className="cart-widget__icon" /></li>

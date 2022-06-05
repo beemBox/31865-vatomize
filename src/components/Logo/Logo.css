@@ -9,7 +9,6 @@ a {
 
 div.logo span {
   display: flex;
-  text-transform: uppercase;
   justify-content: center;
   align-items: center;
 }
@@ -37,14 +36,16 @@ div.logo {
 
 .logo__text-up {
   color: var(--heading-txt-color);
-  font-size: 202%;
+  font-size: 235%;
   transform: scale(1, 0.6);
   font-weight: 100;
   line-height: 0;
+  text-transform: lowercase;
 }
 
 .logo__text-bottom {
   background-color: var(--bg-main-color);
+  text-transform: uppercase;
   font-weight: 900;
   color: var(--bg-second-color);
   letter-spacing: 25px;

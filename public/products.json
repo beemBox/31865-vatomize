@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Dem Thangs Sweet Thang 60ml Vape Juice",
+      "price": 14.99,
+      "description": "Sweet Thang 60ml Vape Juice - Dem Thangs by Prohibition Juice Co.\rSweet Thang: Discover your new favorite Sweet Thang with this decadent e-liquid from the Dem Thangs line by Prohibition Juice Co. Sweet Thang starts off with a rich, buttery cupcake layered with scrumptious hazelnut creme. With your exhale, you’ll find a drizzle of sweet caramel and a touch of aromatic coffee. It’s the sweet treat you’ve been craving!\r\rFeatures & Specifications:\r\rSize: 60ml\rPG/VG: 75/25\rNicotine: 0mg, 3mg, 6mg\rFlavor Profile: Cupcake, Hazelnut Creme, Dessert",
+      "pictureUrl": "http://cdn.shopify.com/s/files/1/2403/7393/products/ECGJ10417_800x.png?v=1647361817",
+      "category": "Juice"
+    },
+    {
+      "id": 2,
+      "title": "Dem Thangs These Thangs Happen 60ml Vape Juice",
+      "price": 14.99,
+      "description": "These Thangs Happen 60ml Vape Juice - Dem Thangs by Prohibition Juice Co.\rThese Thangs Happen: These Thangs Happen by Prohibition Juice Co. blends juicy blueberries with whole milk and vanilla ice cream to make a creamy dessert vape that exceeds expectations! The richness of the milkshake and the tartness of the blueberries make this a flavor you can fill your tank with again and again.\r\rFeatures & Specifications:\r\rSize: 60ml\rPG/VG: 75/25\rNicotine: 0mg, 3mg, 6mg\rFlavor Profile: Blueberry, Milkshake, Vanilla Creme, Berries",
+      "pictureUrl": "http://cdn.shopify.com/s/files/1/2403/7393/products/ECGJ10415_800x.png?v=1647361818",
+      "category": "Juice"
+    },
+    {
+      "id": 3,
+      "title": "AIR FACTORY E-LIQUID TOBACCO - 60ML",
+      "price": 12.99,
+      "description": "Tobacco by Air Factory E-Liquid 60ml\r\rFLAVOR DESCRIPTION:\r\rFamiliar, flavorful tobacco with complex notes.",
+      "pictureUrl": "https://cdn.shopify.com/s/files/1/1591/0171/products/AF_60ML_Bottle_3MG_Tobacco_Duo_2000x_4f6c2480-7a70-4de9-83c0-7e3c9e1a2a57.png",
+      "category": "Juice"
+    },
+    {
+      "id": 4,
+      "title": "The Finest Berry Blast 2x 60ml Vape Juice",
+      "price": 17.99,
+      "description": "The Finest Berry Blast 2x 60ml Vape Juice\rBerry Blast: Perfectly tart and sweet: a mix of raspberries, strawberries, and blackberries.\r\rFlavor Profile: Raspberry, Strawberry, Blackberry\rNicotine Level: 0MG, 3MG, 6MG\rBottle Size: 2 x 60ml ",
+      "pictureUrl": "https://cdn.shopify.com/s/files/1/2403/7393/products/ECGJ07809_800x.png",
+      "category": "Juice"
+    },
+    {
+      "id": 5,
+      "title": "Jinx E-liquids - Blueberry & Cherry E-liquid 120ML Shortfill",
+      "price": 14.99,
+      "description": "Blueberry & Cherry\r\rThe flavour of sticky sweet and juicy red cherries blended into tart wild blueberries bursting with juice\r\rJinx E-liquids are a brand new range by Six Licks & Wild Roots come in a 70VG/30PG ratio which means they are primarily recommended for sub-ohm vapers.",
+      "pictureUrl": "https://39.cdn.ekm.net/ekmps/shops/d2f7ba/images/jinx-e-liquids-blueberry-cherry-e-liquid-120ml-shortfill-45476-1-p.png?v=B364445F-E2DA-4F0A-A90B-34A49EAC0B32",
+      "category": "Juice"
+    },
+    {
+      "id": 6,
+      "title": "Ultimate E-liquid Menthol 100ml Cherry",
+      "price": 16.99,
+      "description": "Cerezas exquisitamente tiernas mezcladas con mentol para hacer un encantador e-líquido de cereza.\r\r10 0 ml de llenado corto, 0 mg de nicotina, 70% VG, 30% PG%, contiene aromas mixtos.",
+      "pictureUrl": "https://ultimatevapeo.com/wp-content/uploads/2021/10/UEMentholCherry_600x.png",
+      "category": "Juice"
+    }
+  ]
+}

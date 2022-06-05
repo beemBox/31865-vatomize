@@ -26,6 +26,7 @@ Tono principal: #d90075 - Magen ta
 Tono Claro: #ee7faa - Rosa Orquídea
 
 *? Grises
+Ultra oscuro: #282a2c - Gris oscuro
 Oscuro: #48474c - Gris Icario
 Intermedio: #8a8b8d - Gris Londres
 Claro: #dcdddf - Gris Siberia
@@ -43,22 +44,33 @@ Negro: #222; - Tres Patitos
 :root {
   --bg-normal-white: #fff;
   --bg-main-color: #dcdddf;
-  --bg-second-color: #013976;
+  --bg-second-color: #282a2c;
+  --border-color-top: #bdd269;
+  --border-color-bottom: #d90075;
   --border-bottom: #0098d2;
+  --bg-item: #83a512;
+  --bg-item-back: #bdd269;
+  --bg-item-even: #005890;
+  --bg-item-even-back: #0074b1;
+  --title-item: #48474c;
   /* Sections */
-  --bg-section-main: #013976;
+  --bg-section-main: #282a2c;
   --heading-txt-color: #f5a54a;
   --border-color: #8a8b8d;
   
   /* Gradientes mezclados con opacidad basada en Gris Siberia posiblemente para hero*/
   --bg-gradient-light: #bdd269dc;
   --bg-gradient-dark: #2a491fdc; 
+  --bg-section-gradient-light: #8a8b8d;
+  --bg-section-gradient-dark: #282a2c;
   
   /* Buttons */
   --btn-add-dark: #2a491f;
-  --btn-add: #83a512;
+  --btn-add: #005890;
+  --btn-add-hover: #0074b1;
   --btn-add-light: #bdd269;
   --btn-rm-dark: #6b0038;
+  --btn-rm-hover: #a02364;
   --btn-rm: #d90075;
   --btn-rm-light: #ee7faa;
   --logo-border-powerline: var(--btn-add-light);
@@ -68,12 +80,18 @@ Negro: #222; - Tres Patitos
   --lnk-btn-hover: var(--heading-txt-color);
 }
 
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-size: 16px;
   font-family: 'Open Sans';
+  color: var(--bg-normal-white);
 }
 
 body {
@@ -84,4 +102,32 @@ body {
 
 hr {
   border: none;
+}
+
+
+
+.section {
+  position: relative;
+  background: linear-gradient(
+    to right bottom,
+    var(--bg-section-gradient-dark),
+    var(--bg-section-gradient-light)
+  );
+  padding: 20px;
+  border-bottom: 5px solid var(--border-color-bottom);
+  border-top: 3px solid var(--border-color-top);
+  width: 90vw;
+  margin: 20px auto;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.section__heading {
+  color: var(--heading-txt-color);
+  font-kerning: none;
+  font-weight: 300;
+  transform: scale(1, 0.7);
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--bg-main-color);
+  font-size: 22px;
 }
