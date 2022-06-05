@@ -1,6 +1,20 @@
-.item__content-button {
+.item-button {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+  background: var(--btn-rm);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: var(--bg-normal-white);
+  font-weight: 300;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  outline: none;
+}
+
+.item-button:hover {
+  background-color: var(--btn-rm-light);
 }

@@ -22,11 +22,11 @@ const Item = (props) => {
       </div>
       <div className="item__content">
         <h3 className="item__content-title">{title}</h3>
-        <h2 className="item__content-price">
-          ${price}
-        </h2>
-        <Counter qty={0}/>
-        <Button className="item__content-details">Check Details</Button>
+        <h2 className="item__content-price">${price}</h2>
+        <div className="item__content-wrapper">
+          <Counter qty={0}/>
+          <Button className="item-button">Check Details</Button>
+        </div>
       </div>
     </div>
   )

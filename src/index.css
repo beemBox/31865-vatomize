@@ -52,6 +52,7 @@ Negro: #222; - Tres Patitos
   --bg-item-back: #bdd269;
   --bg-item-even: #005890;
   --bg-item-even-back: #0074b1;
+  --bg-item-text-price: #282a2cb4;
   --title-item: #48474c;
   /* Sections */
   --bg-section-main: #282a2c;
@@ -63,8 +64,12 @@ Negro: #222; - Tres Patitos
   --bg-gradient-dark: #2a491fdc; 
   --bg-section-gradient-light: #8a8b8d;
   --bg-section-gradient-dark: #282a2c;
+  --bg-section-gradient-light-alpha: #8a8b8ddc;
+  --bg-section-gradient-dark-alpha: #282a2cdc;
   
   /* Buttons */
+  --btn-bg-color: #f5a54a;
+  --btn-bg-color-hover: #fbc67d;
   --btn-add-dark: #2a491f;
   --btn-add: #005890;
   --btn-add-hover: #0074b1;
@@ -94,6 +99,10 @@ Negro: #222; - Tres Patitos
   color: var(--bg-normal-white);
 }
 
+*:focus {
+  outline: none;
+}
+
 body {
   background-color: var(--bg-normal-white);
   height: 100vh;
@@ -103,8 +112,6 @@ body {
 hr {
   border: none;
 }
-
-
 
 .section {
   position: relative;

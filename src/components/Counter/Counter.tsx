@@ -11,10 +11,12 @@ const Counter = ({qty}) => {
   return (
     <div className="item-counter">
       <button
-        className="item-counter__button-minus"
+        className="item-counter__button minus"
         onClick={() => count > 0 ? setCount(count - 1) : count}>-</button>
       <input type="text" className="item-counter__input" value={count}/>
-      <button className="item-counter__button-plus" onClick={() => setCount(count + 1)}>+</button> 
+      <button 
+        className="item-counter__button plus"
+        onClick={() => setCount(count + 1)}>+</button> 
     </div>
   )
 }
