@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import ItemList from '../../components/ItemList/ItemList'
 import Item from '../../components/Item/Item'
 import { getProducts } from '../../asyncmock'
+import { useParams } from 'react-router-dom'
 import './ItemListContainer.css'
 
 //* Creo el type para las props de product.
@@ -14,8 +15,10 @@ type ProductProps = {
   category: string
 }
 
-const ItemListContainer = ({heading, category}) => {
+const ItemListContainer = () => {
   const [items, setItems] = useState<ProductProps[]>([])
+  let { category } = useParams()
+  console.log(category)
 
   //* buscamos los datos en products representando lo que implmentaría en firebase.
   useEffect(() => {
@@ -23,7 +26,7 @@ const ItemListContainer = ({heading, category}) => {
     .then(items => {
       //* filtro por category
       setItems(items.products.filter(
-        item => item.category.toLowerCase() === category.toLowerCase()
+        item => item.category.toLowerCase() === category?.toLowerCase()
       ))
     })
     .catch(err => {
@@ -31,7 +34,7 @@ const ItemListContainer = ({heading, category}) => {
     })
   }, [category])
   return (
-      <ItemList title={heading}>
+      <ItemList title={category + 's List'}>
         {console.log(items)}
         {items.map(item => (
           <Item key={item.id} {...item} />

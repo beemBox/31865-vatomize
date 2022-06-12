@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from '../NavBar/NavBar'
 import Logo from '../Logo/Logo'
+import { Link } from 'react-router-dom'
 import './Header.css'
 
 /**
@@ -16,7 +17,9 @@ const Header = (props: {user: {}}): JSX.Element => {
   //? Funcionalidad disponible a partir de la v16.2. Fuente: https://reactjs.org/blog/2017/11/28/react-v16.2.0-fragment-support.html
   return (
     <div className="header">
-      <Logo className='header__logo logo' />
+      <Link to="/">
+        <Logo className='header__logo logo' />
+      </Link>
       <div className="header__menu-container">
         <NavBar className='header__menu' />
       </div>

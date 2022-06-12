@@ -3,6 +3,7 @@ import './App.css';
 import Header from './components/Header/Header'
 import ItemDetailContainer from './container/ItemDetailContainer/ItemDetailContainer';
 import ItemListContainer from './container/ItemListContainer/ItemListContainer'
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
 
 function App() {
   //! para probar grabatar
@@ -11,9 +12,14 @@ function App() {
   } 
   return (
     <div className="App">
-      <Header user={user}/>
-      <ItemDetailContainer/>
-      <ItemListContainer category="juice" heading="New Juices" />
+      <BrowserRouter>
+        <Header user={user}/>
+        <Routes>
+          <Route path='/' element={<ItemListContainer />} />
+          <Route path='/category/:category' element={<ItemListContainer />} />
+          <Route path='/detail/:id' element={<ItemDetailContainer />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { useState, useEffect }from 'react'
 import Counter from '../Counter/Counter'
 import Button from '../Button/Button'
+import { Link } from 'react-router-dom'
 import './Item.css'
 
 const Item = (props) => {
@@ -25,7 +26,9 @@ const Item = (props) => {
         <h2 className="item__content-price">${price}</h2>
         <div className="item__content-wrapper">
           <Counter qty={0}/>
-          <Button className="item-button">Check Details</Button>
+          <Link to={`/detail/${id}`}>
+            <Button className="item-button">Check Details</Button>
+          </Link>
         </div>
       </div>
     </div>
