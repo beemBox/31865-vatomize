@@ -8,13 +8,21 @@
   border-radius: 5px;
   padding: 10px;
   color: var(--bg-normal-white);
-  font-weight: 300;
+  font-weight: 500;
   font-size: 16px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  outline: none;
+  box-shadow: inset 0px -1px 0px 1px var(--btn-rm-border);
+  border-top: 1.5px solid var(--btn-rm-light);
+  border-bottom: 2px solid var(--btn-rm-dark);
+  outline: 2.5px solid var(--btn-rm-border);
+  outline-offset: 0.1px;
 }
 
 .item-button:hover {
   background-color: var(--btn-rm-light);
+  box-shadow: inset 0px -1px 0px 1px var(--btn-rm-border-hover);
+  border-top: 1.5px solid var(--btn-rm-light-hover);
+  border-bottom: 2px solid var(--btn-rm-dark-hover);
+  color: var(--btn-rm-color-hover);
 }

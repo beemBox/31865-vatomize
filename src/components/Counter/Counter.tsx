@@ -8,12 +8,15 @@ const Counter = ({qty}) => {
     qty = count
   }, [count])
 
+  const handleIncrement = () => {
+  }
+
   return (
     <div className="item-counter">
       <button
         className="item-counter__button minus"
         onClick={() => count > 0 ? setCount(count - 1) : count}>-</button>
-      <input type="text" className="item-counter__input" value={count}/>
+      <input type="text" className="item-counter__input" onChange={handleIncrement} defaultValue="0" value={count}/>
       <button 
         className="item-counter__button plus"
         onClick={() => setCount(count + 1)}>+</button> 

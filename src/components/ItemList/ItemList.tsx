@@ -1,4 +1,3 @@
-import react from 'react'
 import './ItemList.css'
 
 const ItemList = ({title, children}) => (  

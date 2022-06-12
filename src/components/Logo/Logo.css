@@ -11,6 +11,11 @@ div.logo span {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: content-box;
 }
 /* 
 div.logo {
@@ -21,7 +26,7 @@ div.logo {
 } */
 
 div.logo {
-  /* width: 150px; */
+  width: 150px;
   text-align: center;
   /* border: 1px solid var(--bg-main-color); */
   display: grid;
@@ -32,10 +37,13 @@ div.logo {
   ".";
   justify-content: center;
   align-items: center;
+  text-align: center;
+  overflow: hidden;
+  padding: 2px;
 }
 
 .logo__text-up {
-  color: var(--heading-txt-color);
+  color: var(--bg-normal-white);
   font-size: 235%;
   transform: scale(1, 0.6);
   font-weight: 100;
@@ -49,9 +57,7 @@ div.logo {
   font-weight: 900;
   color: var(--bg-second-color);
   letter-spacing: 25px;
-  font-size: 13px;
+  font-size: 60%;
   padding-left: 13%;
   transform: scale(1, 0.7);
-  width: 90%;
-  margin: 0 auto -3px auto;
 }

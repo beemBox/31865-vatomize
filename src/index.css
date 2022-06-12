@@ -22,7 +22,8 @@ Tono Claro: #bdd269 - Verde Pistacho
 
 *? Tonos complementarios directos y análogos
 Tono Oscuro: #6b0038 - Rojo Rioja
-Tono principal: #d90075 - Magen ta
+Tono Oscuro-Principal mix: #721b48;
+Tono principal: #d90075 - Ma-gen-ta
 Tono Claro: #ee7faa - Rosa Orquídea
 
 *? Grises
@@ -74,10 +75,15 @@ Negro: #222; - Tres Patitos
   --btn-add: #005890;
   --btn-add-hover: #0074b1;
   --btn-add-light: #bdd269;
-  --btn-rm-dark: #6b0038;
-  --btn-rm-hover: #a02364;
+  --btn-rm-dark: #721b48;
+  --btn-rm-dark-hover: #883962;
+  --btn-rm-border: #a02364;
+  --btn-rm-border-hover: #b74480;
   --btn-rm: #d90075;
   --btn-rm-light: #ee7faa;
+  --btn-rm-light-hover: #e4b9ca;
+  --btn-rm-color: #e9a8c2;
+  --btn-rm-color-hover: #961d4c;
   --logo-border-powerline: var(--btn-add-light);
   /* Links */
   --lnk-btn-fill: none;
@@ -130,11 +136,12 @@ hr {
 }
 
 .section__heading {
+  position: relative;
   color: var(--heading-txt-color);
   font-kerning: none;
-  font-weight: 300;
+  font-weight: 400;
   transform: scale(1, 0.7);
   text-transform: uppercase;
   border-bottom: 2px solid var(--bg-main-color);
-  font-size: 22px;
+  font-size: 30px;
 }
