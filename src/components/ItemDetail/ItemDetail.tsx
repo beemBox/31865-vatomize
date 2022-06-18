@@ -3,15 +3,14 @@ import Counter from '../Counter/Counter'
 import Button from '../Button/Button'
 import './ItemDetail.css'
 
-const ItemDetail = (props) => {
+const ItemDetail = ({ category = 'Juice', ...props }) => {
   const [qty, setQty] = useState(0)
   const {
     id,
     title,
     price,
     description,
-    pictureUrl,
-    category
+    pictureUrl
   } = props
 
   
@@ -32,7 +31,7 @@ const ItemDetail = (props) => {
           </div>
           <div className='item-detail__content-lower'>
             <Counter qty={0} />
-            <h2 className="item-detail__content-price">{price}</h2>
+            <h2 className="item-detail__content-price">${price}</h2>
             <Button className="item-button">Add to Cart</Button>
           </div>
         </div>
