@@ -1,17 +1,24 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import Counter from '../Counter/Counter'
 import Button from '../Button/Button'
+import { CartContext, CartState } from '../../App'
 import './ItemDetail.css'
 
 const ItemDetail = ({ category = 'Juice', ...props }) => {
   const [qty, setQty] = useState(0)
+  //@ts-ignore
+  const { cart, addItemToCart } = useContext(CartContext)
   const {
     id,
-    title,
+    title, 
     price,
     description,
     pictureUrl
   } = props
+
+  const onAddHandler = (qty) => {
+    addItemToCart([...cart, { id, title, price, qty, description, pictureUrl }])
+  }
 
   
   return(
@@ -32,7 +39,8 @@ const ItemDetail = ({ category = 'Juice', ...props }) => {
           <div className='item-detail__content-lower'>
             <Counter qty={0} />
             <h2 className="item-detail__content-price">${price}</h2>
-            <Button className="item-button">Add to Cart</Button>
+            {/* @ts-ignore */}
+            <Button onClick={onAddHandler} className="item-button">Add to Cart</Button>
           </div>
         </div>
       </div>

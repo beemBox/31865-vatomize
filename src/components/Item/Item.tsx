@@ -1,10 +1,13 @@
-import { useState, useEffect }from 'react'
+import { useState, useEffect, useContext }from 'react'
 import Counter from '../Counter/Counter'
 import Button from '../Button/Button'
 import { Link } from 'react-router-dom'
+import { CartContext, CartState } from '../../App'
 import './Item.css'
 
 const Item = (props) => {
+  //@ts-ignore
+  const { cart, addItemToCart } = useContext(CartContext)
   const [qty, setQty] = useState(0)
   const {
     id,
@@ -13,7 +16,6 @@ const Item = (props) => {
     pictureUrl,
     category
   } = props
-
 
   return (
     //@ts-ignore
