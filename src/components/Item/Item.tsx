@@ -1,14 +1,12 @@
-import { useState, useEffect, useContext }from 'react'
+import './Item.css'
+import { useState, useContext }from 'react'
 import Counter from '../Counter/Counter'
 import Button from '../Button/Button'
 import { Link } from 'react-router-dom'
-import { CartContext, CartState } from '../../App'
-import './Item.css'
+import CartContext from '../../context/CartContext'
+import { ICartItem, IItem } from '../../interfaces/interfaces'
 
-const Item = (props) => {
-  //@ts-ignore
-  const { cart, addItemToCart } = useContext(CartContext)
-  const [qty, setQty] = useState(0)
+const Item = (props: IItem) => {
   const {
     id,
     title,
@@ -16,6 +14,12 @@ const Item = (props) => {
     pictureUrl,
     category
   } = props
+  const [qty, setQty] = useState(0)
+  const { addItem } = useContext(CartContext)
+
+  const addHandler = () => {
+    addItem({ id, title, price, qty } as ICartItem)
+  }
 
   return (
     //@ts-ignore
@@ -27,9 +31,10 @@ const Item = (props) => {
         <h3 className="item__content-title">{title}</h3>
         <h2 className="item__content-price">${price}</h2>
         <div className="item__content-wrapper">
-          <Counter qty={0}/>
+          <Counter qty={0} handleQty={ setQty } />
           <Link to={`/detail/${id}`}>
-            <Button className="item-button">Check Details</Button>
+            {/* @ts-ignore */}
+            <Button className="item-button" onClick={ addHandler }>Check Details</Button>
           </Link>
         </div>
       </div>

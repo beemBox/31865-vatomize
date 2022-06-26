@@ -5,7 +5,6 @@ import { getProducts } from '../../asyncmock'
 import { useParams } from 'react-router-dom'
 import './ItemListContainer.css'
 
-//* Creo el type para las props de product.
 type ProductProps = {
   id: number,
   title: string,
@@ -18,27 +17,29 @@ type ProductProps = {
 const ItemListContainer = () => {
   const [items, setItems] = useState<ProductProps[]>([])
   let { category } = useParams()
-  console.log(category)
 
-  //* buscamos los datos en products representando lo que implmentaría en firebase.
   useEffect(() => {
     getProducts()
-    .then(items => {
-      //* filtro por category
-      setItems(items.products.filter(
-        item => item.category.toLowerCase() === category?.toLowerCase()
-      ))
+      .then(items => {
+      if (category)
+        setItems(items.products.filter(item =>
+          item.category.toLowerCase() === category?.toLowerCase()
+        ))
+      else
+        setItems(items.products)
     })
-    .catch(err => {
-      console.log(err)
-    })
+    .catch(err => console.log(err))
   }, [category])
   return (
-      <ItemList title={category + 's List'}>
-        {console.log(items)}
-        {items.map(item => (
+    <ItemList title={category
+      ? category
+      : 'Nuevos Productos'}>
+      {items.length > 0
+        ? items.map(item => (
           <Item key={item.id} {...item} />
-        ))}
+        ))
+        : 'No se encontraron productos.'
+      }
       </ItemList>
   )
 }

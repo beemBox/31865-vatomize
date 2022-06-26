@@ -1,4 +1,3 @@
-import React from 'react' //! por inercia lo import, innecesario
 import './LinkButton.css'
 
 const LinkButton = (props: {text: string}) => {

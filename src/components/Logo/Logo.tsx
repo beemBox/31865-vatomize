@@ -1,10 +1,7 @@
-// import VALogo from '../../../assets/static/logo.png'
 import './Logo.css'
-//* Mejor hago el logo con CSS
 
 const Logo = (props: {className: string}) => {
   const {className} = props
-  console.log(process.env.PUBLIC_URL)
   return <>
       <div className={className}>
         

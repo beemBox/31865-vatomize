@@ -1,4 +1,3 @@
-//? para que me tome los SVG's
 declare module "*.svg" {
   const content: any
   export default content

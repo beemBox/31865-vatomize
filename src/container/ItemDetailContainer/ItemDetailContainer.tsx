@@ -10,7 +10,6 @@ const ItemDetailContainer = () => {
   const [item, setItem] = useState<ProductProps>()
   const { id } = useParams()
 
-  //* Busco el producto por id
   useEffect(() => {
     getProductById(Number(id))
       .then(item => setItem(item))

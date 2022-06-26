@@ -1,13 +1,15 @@
-import { useState, useEffect, useContext } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import Counter from '../Counter/Counter'
 import Button from '../Button/Button'
-import { CartContext, CartState } from '../../App'
+import CartContext from '../../context/CartContext'
 import './ItemDetail.css'
+import { ICartItem, ICartContext } from '../../interfaces/interfaces'
+import { Link } from 'react-router-dom'
 
 const ItemDetail = ({ category = 'Juice', ...props }) => {
   const [qty, setQty] = useState(0)
-  //@ts-ignore
-  const { cart, addItemToCart } = useContext(CartContext)
+  const [isAdded, setIsAdded] = useState(false)
+  const { addItem } = useContext<ICartContext>(CartContext)
   const {
     id,
     title, 
@@ -16,8 +18,13 @@ const ItemDetail = ({ category = 'Juice', ...props }) => {
     pictureUrl
   } = props
 
-  const onAddHandler = (qty) => {
-    addItemToCart([...cart, { id, title, price, qty, description, pictureUrl }])
+  useEffect(() => {
+    console.log('cambio ', qty)
+  }, [qty])
+
+  const addHandler = () => {
+    addItem({ id, title, price, qty, description, pictureUrl } as ICartItem)
+    setIsAdded(true)
   }
 
   
@@ -37,10 +44,12 @@ const ItemDetail = ({ category = 'Juice', ...props }) => {
             <p>{description}</p>
           </div>
           <div className='item-detail__content-lower'>
-            <Counter qty={0} />
+            <Counter qty={qty} handleQty={setQty} />
             <h2 className="item-detail__content-price">${price}</h2>
-            {/* @ts-ignore */}
-            <Button onClick={onAddHandler} className="item-button">Add to Cart</Button>
+            { isAdded
+              ? <Link to='/cart'>Checkout</Link>
+              : <Button onClick={addHandler} className="item-button">Add to Cart</Button>
+            }
           </div>
         </div>
       </div>
